@@ -10,7 +10,7 @@
     ul {
       list-style-type: disc;
       /* Change bullet style to disc, circle, or square */
-      margin-left: 2%;
+      margin-left: 10%;
       /* Add left margin to the list */
       padding-left: 2%;
       /* Add left padding to the list */
@@ -25,6 +25,44 @@
       font-size: 25px;
       /* Adjust the font size value as desired */
     }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 100%;
+      max-width: 900px;
+      font-size: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      /* Add this */
+      right: 0;
+      /* Add this */
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 999;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+    }
+
+    nav ul li a:hover {
+      color: #666;
+    }
   </style>
   <meta name="author" content="Sebastian Bordt">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,11 +70,23 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" style="font-size: 20px; font-weight: bold;">Sebastian Bordt</a></li>
+        <li><a href="#" style="font-size: 18px;">About</a></li>
+        <li><a href="#" style="font-size: 18px;">News</a></li>
+        <li><a href="#publications" style="font-size: 18px;">Publications</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <table
-    style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:4%;">
+    style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:60px;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -49,8 +99,8 @@
                       src="images/sebastian.jpg" class="hoverZoomLink"></a>
                 </td>
                 <td style="padding:2.5%;width:70%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Sebastian Bordt</name>
+                  <p style="text-align:center;">
+                    <name style="font-size: 35px;">Sebastian Bordt</name>
                   </p>
                   <p>I am a PhD Student at the Theory of Machine Learning Group at the University of Tübingen,
                     supervised by Ulrike von Luxburg. I'm broadly interested in the
@@ -62,12 +112,16 @@
                     Munich. I also spent some time at the Munich Graduate School of Economics.
                   </p>
                   <p style="text-align:center">
-                    <a href="mailto:sebastian.bordt@uni-tuebingen.de">Email</a> &nbsp/&nbsp
+                    <a href="mailto:sebastian.bordt@uni-tuebingen.de"><img style="width: 40px;" src="./images/mail.png"
+                        alt="Mail" class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
                     <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
-                    <a href="https://scholar.google.de/citations?user=6PnL3BgAAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://twitter.com/s_bordt">Twitter</a> &nbsp/&nbsp
-                    <a href="https://github.com/sbordt/">Github</a>
+                    <a href="https://scholar.google.de/citations?user=6PnL3BgAAAAJ&hl=en"><img style="width: 40px;"
+                        src="./images/scholar_logo.png" alt="Scholar" class="role-icon"></a>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://twitter.com/s_bordt"><img style="width: 40px;" src="./images/Twitter_Logo_Blue.png"
+                        alt="Twitter" class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://github.com/sbordt/"><img style="width: 40px;"
+                        src="./images/GitHub-Mark-120px-plus.png" alt="GitHub" class="role-icon"></a>
                   </p>
                 </td>
 
@@ -81,7 +135,7 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading><br><br>
-                  <table>
+                  <table style="margin-left: 10%;">
                     <tr><strong>June 2023:</strong> Attending CVPR in Vancouver to present our paper "The Manifold
                       Hypothesis for Gradient-Based Explanations" which received a spotlight&#128161; at the <a
                         href="https://xai4cv.github.io/workshop_cvpr23">Workshop</a> on
@@ -141,24 +195,35 @@
               </tr>
             </tbody>
           </table>
-          <table
+          <table id="publications"
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Pre-Prints</heading>
-                  <p>
-                    I'm broadly interested in the analysis of machine learning algorithms and their societal impact.
-                    My current work focuses on the analysis of popular algorithms used in explainable machine learning.
-                    One of my recent
-                    projects outlines the connections between SHAP and GAMs.
-
-                    I'm also intersted in how human decision makers can be optimally supported by machine learning.
-                  </p>
                 </td>
               </tr>
             </tbody>
           </table>
+
+          <table
+            style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:5%;">
+            <ul>
+              <li><strong>Which Models have Perceptually-Aligned Gradients? An Explanation via Off-Manifold
+                  Robustness</strong><br>
+                Suraj Srinivas, Sebastian Bordt, Hima Lakkaraju<br>
+                arxiv pre-print, 2023 <br>
+                <a href="https://arxiv.org/abs/2305.19101">Paper</a>
+              </li>
+              <li><strong>ChatGPT Participates in a Computer Science Exam</strong><br>
+                Sebastian Bordt, Ulrike von Luxburg<br>
+                arxiv pre-print, 2023 <br>
+                <a href="https://arxiv.org/abs/2303.09461">Paper</a> &nbsp;&nbsp;
+                <a href="https://github.com/tml-tuebingen/chatgpt-algorithm-exam">Code</a>
+              </li>
+            </ul>
+          </table>
+
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -170,6 +235,7 @@
               </tr>
             </tbody>
           </table>
+
 
           <table
             style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:5%;">
@@ -211,8 +277,17 @@
                 <br>
                 Sebastian Bordt, Ulrike von Luxburg<br>
                 International Conference on Artificial Intelligence and Statistics (AISTATS), 2023
-
               </li>
+
+              <li><strong>Recovery Guarantees for Kernel-based Clustering under Non-parametric Mixture
+                  Models</strong><br>
+                Leena C. Vankadara, Sebastian Bordt, Ulrike von Luxburg, Debarghya Ghoshdastidar<br>
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2021<br>
+                <a href="https://proceedings.mlr.press/v130/vankadara21a.html">Paper
+                </a>
+              </li>
+
+
             </ul>
           </table>
           <table
