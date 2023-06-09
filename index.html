@@ -41,6 +41,8 @@
       margin-left: auto;
       margin-right: auto;
       z-index: 999;
+      height: 30px;
+      max-height: 30px;
     }
 
     nav ul {
@@ -77,14 +79,14 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#" style="font-size: 20px; font-weight: bold;">Sebastian Bordt</a></li>
-        <li><a href="#" style="font-size: 18px;">About</a></li>
-        <li><a href="#" style="font-size: 18px;">News</a></li>
+        <li><a href="#about" style="font-size: 20px; font-weight: bold;">Sebastian Bordt</a></li>
+        <li><a href="#about" style="font-size: 18px;">About</a></li>
+        <li><a href="#news" style="font-size: 18px;">News</a></li>
         <li><a href="#publications" style="font-size: 18px;">Publications</a></li>
       </ul>
     </nav>
   </header>
-
+  <div id="about" style="scroll-margin-top: 60px;"></div>
   <table
     style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:60px;">
     <tbody>
@@ -94,7 +96,7 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr style="padding:0px">
-                <td style="padding:2.5%;width:30%;max-width:30%">
+                <td style="padding:2.5%;width:25%;max-width:25%">
                   <a href="images/sebastian.jpg"><img style="width:90%;max-width:100%" alt="profile photo"
                       src="images/sebastian.jpg" class="hoverZoomLink"></a>
                 </td>
@@ -103,9 +105,24 @@
                     <name style="font-size: 35px;">Sebastian Bordt</name>
                   </p>
                   <p>I am a PhD Student at the Theory of Machine Learning Group at the University of Tübingen,
-                    supervised by Ulrike von Luxburg. I'm broadly interested in the
-                    analysis of machine learning algorithms and their societal impact. My current work focuses on
-                    explainable machine learning.
+                    supervised by <a href="http://tml.cs.uni-tuebingen.de/team/luxburg/">Ulrike von Luxburg</a>. I'm
+                    broadly interested in the
+                    analysis of machine learning algorithms and their societal impact.
+                    My current work focuses on explainable machine learning. For example, I haved worked on the <a
+                      href="https://proceedings.mlr.press/v206/bordt23a.html">connections between post-hoc methods and
+                      interpretable models</a>, and on the <a
+                      href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">suitability of
+                      explanation
+                      methods for regulation</a>. If you are interested in these topic, take a look at our <a
+                      href="https://www.machinelearningforscience.de/en/artificial-intelligence-ai-should-it-explain-itself/">blog
+                      post.</a> In a different line of work, we ask <a href="https://arxiv.org/abs/2206.07387">when
+                      salincy
+                      maps for
+                      image classifiers are perceptually aligned</a>, and
+                    how this is <a href="https://arxiv.org/abs/2305.19101">connected with robust models.</a> I have also
+                    done some
+                    <a href="https://arxiv.org/abs/2303.09461">early experiments with ChatGPT.</a>
+
                   </p>
                   <p> Prior to my work in machine learning, I obtained Master's degrees in Mathematics and
                     Economics at TUM and LMU in
@@ -129,74 +146,84 @@
             </tbody>
           </table>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table id="news"
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:40px;">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>News</heading><br><br>
-                  <table style="margin-left: 10%;">
-                    <tr><strong>June 2023:</strong> Attending CVPR in Vancouver to present our paper "The Manifold
-                      Hypothesis for Gradient-Based Explanations" which received a spotlight&#128161; at the <a
-                        href="https://xai4cv.github.io/workshop_cvpr23">Workshop</a> on
-                      Explainable AI for Computer Vision.
-                    </tr><br><br>
-                    <tr><strong>Summer 2023:</strong> I'm interning with Rich
-                      Caruana at Microsoft Research in Seattle.
-                    </tr><br><br>
-
-                    <tr><strong>April 2023:</strong> Attending AISTATS to present our paper "From Shapley Values to
-                      Generalized Additive
-                      Models and back".</tr><br><br>
-                    <tr><strong>April 2023:</strong> Visiting the group of <a
-                        href="https://himalakkaraju.github.io/">Hima Lakkaraju</a>
-                      at Harvard.
-                    </tr><br><br>
-                    <tr><strong>April 2023:</strong> Invited Talk at the <a
-                        href="https://www.ideal-institute.org/2023/03/09/workshop-on-machine-learning-interpretability-and-logic">Workshop</a>
-                      on Machine Learning, Interpretability, and Logic
-                      at the IDEAL
-                      institute in Chicago.</tr><br><br>
-                    <tr><strong>March 2023:</strong> Talking at the <a
-                        href="https://www.eml-unitue.de/events/external_events">Workshop</a> on Explainability in
-                      Machine
-                      Learning at the University
-                      of Tübingen.</tr><br><br>
-                  </table>
+                <td style=" padding:20px;width:100%;vertical-align:middle">
+                  <heading>Recent News</heading>
                 </td>
               </tr>
             </tbody>
           </table>
 
           <table
+            style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:5%;">
+            <ul>
+              <li><strong>June 2023:</strong> At CVPR in Vancouver to present our paper "The Manifold
+                Hypothesis for Gradient-Based Explanations" which received a spotlight&#128161; at the <a
+                  href="https://xai4cv.github.io/workshop_cvpr23">Workshop</a> on
+                Explainable AI for Computer Vision.
+              </li>
+              <li><strong>Summer 2023:</strong> I'm interning with Rich
+                Caruana at Microsoft Research in Seattle.
+              </li>
+              <li><strong>April 2023:</strong> At AISTATS to present our <a
+                  href="https://proceedings.mlr.press/v206/bordt23a.html">paper
+                </a> "From Shapley Values to
+                Generalized Additive
+                Models and back".</li>
+              <li><strong>April 2023:</strong> Visiting the group of <a href="https://himalakkaraju.github.io/">Hima
+                  Lakkaraju</a>
+                at Harvard.
+              </li>
+              <li><strong>April 2023:</strong> Invited Talk at the <a
+                  href="https://www.ideal-institute.org/2023/03/09/workshop-on-machine-learning-interpretability-and-logic">Workshop</a>
+                on Machine Learning, Interpretability, and Logic
+                at the IDEAL
+                institute in Chicago.</li>
+              <li><strong>March 2023:</strong> Talking at the <a
+                  href="https://www.eml-unitue.de/events/external_events">Workshop</a> on Explainability in
+                Machine
+                Learning at the University
+                of Tübingen.</li>
+            </ul>
+          </table>
+
+          <table id="news"
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Past News</heading><br><br>
-                  <table>
-                    <tr><strong>November 2022:</strong> Speaking at the Nice <a
-                        href="https://sites.google.com/view/nwi2022/home">Workshop</a> on Interpretability.</tr><br><br>
-                    <tr><strong>Summer 2022:</strong> Visiting the Simon's Institute for the Theory of Computing to
-                      participate in the
-                      <a href="https://simons.berkeley.edu/programs/iml2022">Summer Cluster</a> on Interpretable Machine
-                      Learning.
-                    </tr><br><br>
-                    <tr><strong>June 2022:</strong> Attending FAccT in Seoul to present our <a
-                        href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">paper</a> "Post-hoc explanations
-                      fail to achieve their purpose in adversarial contexts".</tr><br><br>
-                    <tr><strong>March 2022:</strong> Presenting our <a
-                        href="https://proceedings.mlr.press/v151/bordt22a.html">paper
-                      </a> "A Bandit Model for
-                      Human-Machine Decision Making with Private Information and Opacity" at AISTATS.</tr>
-                    <br><br>
-                  </table>
+                  <heading>Past Activities</heading>
                 </td>
               </tr>
             </tbody>
           </table>
+
+          <table
+            style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:5%;">
+            <ul>
+              <li><strong>November 2022:</strong> Speaking at the Nice <a
+                  href="https://sites.google.com/view/nwi2022/home">Workshop</a> on Interpretability.</li>
+              <li><strong>Summer 2022:</strong> Visiting the Simon's Institute for the Theory of Computing to
+                participate in the
+                <a href="https://simons.berkeley.edu/programs/iml2022">Summer Cluster</a> on Interpretable Machine
+                Learning.
+              </li>
+              <li><strong>June 2022:</strong> At FAccT in Seoul to present our <a
+                  href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">paper</a> "Post-hoc explanations
+                fail to achieve their purpose in adversarial contexts".</li>
+              <li><strong>March 2022:</strong> Presenting our <a
+                  href="https://proceedings.mlr.press/v151/bordt22a.html">paper
+                </a> "A Bandit Model for
+                Human-Machine Decision Making with Private Information and Opacity" at AISTATS.</li>
+            </ul>
+          </table>
+
+
           <table id="publications"
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:40px;">
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
@@ -249,34 +276,44 @@
                 </a>
               </li>
 
-              <li><a href="https://proceedings.mlr.press/v206/bordt23a.html">From Shapley Values to Generalized Additive
+              <li><strong>From Shapley Values to Generalized Additive
                   Models and back
-                </a>
+                </strong>
                 <br>
                 Sebastian Bordt, Ulrike von Luxburg<br>
-                International Conference on Artificial Intelligence and Statistics (AISTATS), 2023
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2023<br>
+                <a href="https://proceedings.mlr.press/v206/bordt23a.html">Paper
+                </a> &nbsp;&nbsp; <a href="https://github.com/tml-tuebingen/nshap">Code
+                </a>
               </li>
 
-              <li><a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">Post-hoc explanations fail to achieve
+              <li><strong>Post-hoc explanations fail to achieve
                   their
                   purpose in adversarial contexts
-                </a>
+                </strong>
                 <br>
                 Sebastian Bordt, Michèle Finck, Eric Raidl, Ulrike von Luxburg<br>
                 ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2022 <br>
-                <a href="https://proceedings.mlr.press/v151/bordt22a.html">Paper
-                </a><a
+                <a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">Paper
+                </a> &nbsp;&nbsp; <a href="https://github.com/tml-tuebingen/facct-post-hoc">Code
+                </a> &nbsp;&nbsp; <a
                   href="https://www.machinelearningforscience.de/en/artificial-intelligence-ai-should-it-explain-itself/">Blog
                   Post
+                </a> &nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=bYtyz7tGNyQ">Video
                 </a>
+
               </li>
 
-              <li><a href="https://proceedings.mlr.press/v151/bordt22a.html">A Bandit Model for Human-Machine Decision
+
+
+              <li><strong>A Bandit Model for Human-Machine Decision
                   Making with Private Information and Opacity
-                </a>
+                </strong>
                 <br>
                 Sebastian Bordt, Ulrike von Luxburg<br>
-                International Conference on Artificial Intelligence and Statistics (AISTATS), 2023
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2023<br>
+                <a href="https://proceedings.mlr.press/v151/bordt22a.html">Paper
+                </a>
               </li>
 
               <li><strong>Recovery Guarantees for Kernel-based Clustering under Non-parametric Mixture
