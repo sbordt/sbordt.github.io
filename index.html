@@ -27,8 +27,6 @@
     }
 
     header {
-      background-color: #f2f2f2;
-      padding: 10px;
       width: 100%;
       max-width: 900px;
       font-size: 15px;
@@ -43,27 +41,6 @@
       z-index: 999;
       height: 30px;
       max-height: 30px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      padding: 5px;
-    }
-
-    nav ul li a:hover {
-      color: #666;
     }
 
     #topcontainer {
@@ -84,6 +61,10 @@
       vertical-align: middle;
     }
 
+    .role-icon {
+      width: 60px;
+    }
+
     /* mobile scree */
     @media (max-width:700px) {
       #toppicture {
@@ -94,9 +75,8 @@
       }
 
       #toptext {
-        padding: 2.5%;
-        width: 70%;
-        max-width: 70%;
+        width: 95%;
+        max-width: 95%;
         display: inline-table;
         text-align: left;
       }
@@ -105,24 +85,37 @@
         vertical-align: middle;
         text-align: center;
       }
+
+      .role-icon {
+        width: 50px;
+      }
     }
   </style>
   <meta name="author" content="Sebastian Bordt">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="hamburger.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#about" style="font-size: 20px; font-weight: bold;">Sebastian Bordt</a></li>
-        <li><a href="#about" style="font-size: 18px;">About</a></li>
-        <li><a href="#news" style="font-size: 18px;">News</a></li>
-        <li><a href="#publications" style="font-size: 18px;">Publications</a></li>
+
+    <section class="top-nav">
+      <div>
+        <a href="#about" style="font-size: 20px; font-weight: bold; color: black;">Sebastian Bordt</a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#about" style="font-size: 18px; color: black;">About</a></li>
+        <li><a href="#news" style="font-size: 18px; color: black;">News</a></li>
+        <li><a href="#publications" style="font-size: 18px; color: black;">Publications</a></li>
       </ul>
-    </nav>
+    </section>
+
   </header>
   <div id="about" style="scroll-margin-top: 60px;"></div>
   <table
@@ -172,15 +165,15 @@
                     Munich. I also spent some time at the Munich Graduate School of Economics.
                   </p>
                   <p style="text-align:center">
-                    <a href="mailto:sebastian.bordt@uni-tuebingen.de"><img style="width: 60px;" src="./images/mail.png"
-                        alt="Mail" class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
-                    <a href="https://scholar.google.de/citations?user=6PnL3BgAAAAJ&hl=en"><img style="width: 60px;"
+                    <a href="mailto:sebastian.bordt@uni-tuebingen.de"><img src="./images/mail.png" alt="Mail"
+                        class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://scholar.google.de/citations?user=6PnL3BgAAAAJ&hl=en"><img
                         src="./images/scholar_logo.png" alt="Scholar" class="role-icon"></a>
                     &nbsp&nbsp&nbsp&nbsp
-                    <a href="https://twitter.com/s_bordt"><img style="width: 60px;" src="./images/Twitter_Logo_Blue.png"
-                        alt="Twitter" class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
-                    <a href="https://github.com/sbordt/"><img style="width: 60px;"
-                        src="./images/GitHub-Mark-120px-plus.png" alt="GitHub" class="role-icon"></a>
+                    <a href="https://twitter.com/s_bordt"><img src="./images/Twitter_Logo_Blue.png" alt="Twitter"
+                        class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://github.com/sbordt/"><img src="./images/GitHub-Mark-120px-plus.png" alt="GitHub"
+                        class="role-icon"></a>
                   </p>
                 </td>
 
