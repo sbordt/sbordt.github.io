@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Sebastian Bordt</title>
+  <style>
+    /* CSS styles for the list */
+    ul {
+      list-style-type: disc;
+      /* Change bullet style to disc, circle, or square */
+      margin-left: 10%;
+      /* Add left margin to the list */
+      padding-left: 2%;
+      /* Add left padding to the list */
+    }
+
+    li {
+      margin-bottom: 7.5px;
+      /* Add bottom margin between list items */
+    }
+
+    body {
+      font-size: 25px;
+      /* Adjust the font size value as desired */
+    }
+
+    header {
+      width: 100%;
+      max-width: 900px;
+      font-size: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      /* Add this */
+      right: 0;
+      /* Add this */
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 999;
+      height: 30px;
+      max-height: 30px;
+    }
+
+    #topcontainer {
+      padding: 0px;
+    }
+
+    #toppicture {
+      padding: 2.5%;
+      width: 30%;
+      max-width: 30%;
+    }
+
+
+    #toptext {
+      padding: 2.5%;
+      width: 65%;
+      max-width: 65%;
+      vertical-align: middle;
+    }
+
+    .role-icon {
+      width: 60px;
+    }
+
+    .bullet-list {
+      margin-left: 5%;
+      width: 95%;
+    }
+
+    /* mobile scree */
+    @media (max-width:700px) {
+      #toppicture {
+        width: 85%;
+        max-width: 85%;
+        display: inline-table;
+        text-align: center;
+      }
+
+      #toptext {
+        width: 95%;
+        max-width: 95%;
+        display: inline-table;
+        text-align: left;
+      }
+
+      #topcontainer {
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .role-icon {
+        width: 45px;
+      }
+
+      .bullet-list {
+        margin-left: 0%;
+        width: 95%;
+      }
+
+      ul {
+        margin-left: 5%;
+        padding-left: 2%;
+      }
+    }
+  </style>
+  <meta name="author" content="Sebastian Bordt">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="hamburger.css">
+</head>
+
+<body>
+  <header>
+
+    <section class="top-nav">
+      <div>
+        <a href="#about" style="font-size: 20px; font-weight: bold; color: black;">Sebastian Bordt</a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#about" style="font-size: 18px; color: black;">About</a></li>
+        <li><a href="#news" style="font-size: 18px; color: black;">News</a></li>
+        <li><a href="#publications" style="font-size: 18px; color: black;">Publications</a></li>
+        <li><a href="https://sbordt.substack.com/" style="font-size: 18px; color: black;">Blog</a></li>
+      </ul>
+    </section>
+
+  </header>
+  <div id="about" style="scroll-margin-top: 60px;"></div>
+  <table
+    style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:60px;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr id="topcontainer">
+                <td id="toppicture">
+                  <a href="images/sebastian.jpg"><img style="width:95%;max-width:100%" alt="profile photo"
+                      src="images/sebastian.jpg" class="hoverZoomLink"></a>
+                </td>
+                <td id="toptext">
+                  <p style="text-align:center;">
+                    <name style="font-size: 35px;">Sebastian Bordt </name>
+                  </p>
+                  <p> Hi! I'm a postdoctoral researcher interested in large language models and interpretability. I work in the 
+                    theory of machine learning group at the University of Tübingen, supervised by <a href="http://tml.cs.uni-tuebingen.de/team/luxburg/">Ulrike von Luxburg</a>.
+                    In 2023, I interned with Rich Caruana at Microsoft Research.
+                  </p>
+                  <p>Currently, I'm very interested in a principled understanding of LLMs, including evaluation.
+                    If you are interested in this topic, take a look at this recent <a href="https://arxiv.org/abs/2410.03249">pre-print</a>, and our COLM'24 <a href="https://arxiv.org/abs/2404.06209">paper</a>.
+                    At Microsoft Research, we did some <a href="https://arxiv.org/abs/2308.01157">experiments</a> with GPT-4 and GAMs in a
+                    healthcare setting. In Tübingen, we had ChatGPT blindly participate 
+                    in a <a href="https://arxiv.org/abs/2303.09461"> computer science exam</a>.
+                  <p>
+                    During my PhD, I worked on a variety of different topics in explainable machine learning. For example, I haved worked on the <a
+                      href="https://proceedings.mlr.press/v206/bordt23a.html">connections between post-hoc methods and
+                      interpretable models</a>, and on the <a
+                      href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">suitability of
+                      explanation
+                      algorithms for regulation</a>. If you are interested in these topic, take a look at this <a
+                      href="https://www.machinelearningforscience.de/en/artificial-intelligence-ai-should-it-explain-itself/">blog
+                      post.</a> In a different line of work, we ask <a href="https://arxiv.org/abs/2206.07387">when
+                      salincy
+                      maps for
+                      image classifiers are perceptually aligned</a>, and
+                    how this is <a href="https://arxiv.org/abs/2305.19101">connected with robust models.</a>
+                  </p>
+                  <p> Prior to my work in machine learning, I obtained Master's degrees in Mathematics and
+                    Economics at TUM and LMU in
+                    Munich. I also spent some time at the Munich Graduate School of Economics.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:sebastian.bordt@uni-tuebingen.de"><img src="./images/mail.png" alt="Mail"
+                        class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://scholar.google.de/citations?user=6PnL3BgAAAAJ&hl=en"><img
+                        src="./images/scholar_logo.png" alt="Scholar" class="role-icon"></a>
+                    &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://bsky.app/profile/sbordt.bsky.social"><img src="./images/Bluesky_Logo.svg" alt="Twitter"
+                        class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://github.com/sbordt/"><img src="./images/GitHub-Mark-120px-plus.png" alt="GitHub"
+                        class="role-icon"></a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="files/cv_bordt.pdf"><img src="./images/cv.png" alt="cv" class="role-icon"></a>
+                  </p>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+
+          <table id="news"
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:40px;">
+            <tbody>
+              <tr>
+                <td style=" padding:20px;width:100%;vertical-align:middle">
+                  <heading>Recent News</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;" class="bullet-list">
+            <ul>
+              <li><strong>November 2024:</strong> New blog post: <a href="https://sbordt.substack.com/p/data-contamination-in-mle-bench">How to test language models for prior exposure with Kaggle competitions?</a> 
+            </li>
+              <li><strong>October 2024:</strong> Invited talk at the <a href="http://www.birs.ca/events/2024/5-day-workshops/24w5308/participants">Banff Workshop</a> "New Directions in Machine Learning Theory".
+
+              <li><strong>October 2024:</strong> Our latest <a href="https://arxiv.org/abs/2410.03249">pre-print</a> "How much can we forget about Data Contamination?" is accepted at the ATTRIB Workshop at NeurIPS.
+              </li>              
+              <li><strong>July 2024:</strong> Our <a href="https://arxiv.org/abs/2404.06209">paper</a> on memorization and learning of tabular data in GPT-4 is accepted at COLM.
+              </li>            
+              <li><strong>Februar 2024:</strong> Our paper <a href="http://arxiv.org/abs/2402.14474">Data Science with LLMs and Interpretable Models</a>
+               is at the XAI4Sci Workshop at AAAI-24. Check out <a href="https://github.com/interpretml/TalkToEBM">TalkToEBM</a> to see how interpretable models
+               and LLMs can work together.
+              </li>
+            </li>
+              <li><strong>Februar 2024:</strong> I've started a <a href="https://sbordt.substack.com/">blog</a>!
+                 In the first post I ask: <a href="https://sbordt.substack.com/">How are LLMs going to change interpretable machine learning?</a> 
+             </li>
+              <li><strong>Februar 2024:</strong> In a new <a href="https://arxiv.org/abs/2402.02870">pre-print</a>: "Statistics without
+                 Interpretation: A Sober Look at Explainable Machine Learning" Ulrike von Luxburg and I offer our perspective on
+                  the field of explainable machine learning. 
+              </li>
+            </ul>
+          </table>
+
+          <table id="news"
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Past Activities</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;" class="bullet-list">
+            <ul>
+              <li><strong>October 2023:</strong> We will present our paper "Elephants Never Forget: Testing Language
+                Models for Memorization of Tabular Data"
+                at the Table Representation Learning Workshop at NeurIPS.
+              </li>
+              <li><strong>September 2023:</strong> Our <a href="https://arxiv.org/abs/2305.19101">paper</a> "Which
+                Models have Perceptually-Aligned Gradients? An Explanation via Off-Manifold
+                Robustness" was highlighted as a Spotlight at Neurips.
+              </li>
+              <li><strong>July 2023:</strong> Visit the <a href="https://advml-frontier.github.io/">AdvML Frontiers
+                  workshop</a> at ICML to see our <a href="https://arxiv.org/abs/2305.19101">paper</a> "Which
+                Models
+                have Perceptually-Aligned Gradients? An Explanation via Off-Manifold
+                Robustness".
+              </li>
+              <li><strong>June 2023:</strong> At CVPR in Vancouver to present our paper "The Manifold
+                Hypothesis for Gradient-Based Explanations" which received a spotlight at the <a
+                  href="https://xai4cv.github.io/workshop_cvpr23">Workshop</a> on
+                Explainable AI for Computer Vision.
+              </li>
+              <li><strong>Summer 2023:</strong> I'm interning with Rich
+                Caruana at Microsoft Research in Seattle.
+              </li>
+              <li><strong>April 2023:</strong> At AISTATS to present our <a
+                  href="https://proceedings.mlr.press/v206/bordt23a.html">paper
+                </a> "From Shapley Values to
+                Generalized Additive
+                Models and back".</li>
+              <li><strong>April 2023:</strong> Visiting the group of <a href="https://himalakkaraju.github.io/">Hima
+                  Lakkaraju</a>
+                at Harvard.
+              </li>
+              <li><strong>April 2023:</strong> Invited Talk at the <a
+                  href="https://www.ideal-institute.org/2023/03/09/workshop-on-machine-learning-interpretability-and-logic">Workshop</a>
+                on Machine Learning, Interpretability, and Logic
+                at the IDEAL
+                institute in Chicago.</li>
+              <li><strong>March 2023:</strong> Talking at the <a
+                  href="https://www.eml-unitue.de/events/external_events">Workshop</a> on Explainability in
+                Machine
+                Learning at the University
+                of Tübingen.</li>
+              <li><strong>November 2022:</strong> Speaking at the Nice <a
+                  href="https://sites.google.com/view/nwi2022/home">Workshop</a> on Interpretability.</li>
+              <li><strong>Summer 2022:</strong> Visiting the Simon's Institute for the Theory of Computing to
+                participate in the
+                <a href="https://simons.berkeley.edu/programs/iml2022">Summer Cluster</a> on Interpretable Machine
+                Learning.
+              </li>
+              <li><strong>June 2022:</strong> At FAccT in Seoul to present our <a
+                  href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">paper</a> "Post-hoc explanations
+                fail to achieve their purpose in adversarial contexts".</li>
+              <li><strong>March 2022:</strong> Presenting our <a
+                  href="https://proceedings.mlr.press/v151/bordt22a.html">paper
+                </a> "A Bandit Model for
+                Human-Machine Decision Making with Private Information and Opacity" at AISTATS.</li>
+            </ul>
+          </table>
+
+
+          <table id="publications"
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top:40px;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Pre-Prints</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;" class="bullet-list">
+            <ul>
+              <li><strong>Statistics without Interpretation: A Sober Look at Explainable Machine Learning</strong><br>
+                Sebastian Bordt and Ulrike von Luxburg<br>
+                arxiv pre-print, 2024 <br>
+                <a href="https://arxiv.org/abs/2402.02870">Paper</a>
+              </li>
+              <li><strong>LLMs Understand Glass-Box Models, Discover Surprises, and Suggest Repairs</strong><br>
+                Benjamin J. Lengerich, Sebastian Bordt, Harsha Nori, Mark E. Nunnally, Yin Aphinyanaphongs, Manolis
+                Kellis, Rich Caruana<br>
+                arxiv pre-print, 2023 <br>
+                <a href="https://arxiv.org/abs/2308.01157">Paper</a>
+                <a href="https://github.com/interpretml/TalkToEBM">Code</a>
+              </li>
+              <li><strong>ChatGPT Participates in a Computer Science Exam</strong><br>
+                Sebastian Bordt, Ulrike von Luxburg<br>
+                arxiv pre-print, 2023 <br>
+                <a href="https://arxiv.org/abs/2303.09461">Paper</a> &nbsp;&nbsp;
+                <a href="https://github.com/tml-tuebingen/chatgpt-algorithm-exam">Code</a>
+              </li>
+            </ul>
+          </table>
+
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Peer-Reviewed Publications</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <table style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;" class="bullet-list">
+
+            <ul>
+              <li><strong>How much can we forget about Data Contamination?</strong><br>
+                Sebastian Bordt, Suraj Srinivas, Valentyn Boreiko, Ulrike von Luxburg<br>
+                ATTRIB Workshop at NeurIPS, 2024 <br>
+                <a href="https://arxiv.org/abs/2410.03249">Paper</a>
+              </li>
+
+              <li><strong>Elephants Never Forget: Memorization and Learning of Tabular Data in Large Language Models</strong><br>
+                Sebastian Bordt, Harsha Nori, Vanessa Rodrigues, Besmira Nushi, Rich Caruana<br>
+                COLM, 2024 <br>
+                <a href="https://arxiv.org/abs/2404.06209">Paper</a> &nbsp;&nbsp; <a href="https://github.com/interpretml/LLM-Tabular-Memorization-Checker">Code
+                </a>
+              </li>
+
+              <li><strong>Data Science with LLMs and Interpretable Models</strong><br>
+                Sebastian Bordt, Ben Lengerich, Harsha Nori, Rich Caruana<br>
+                XAI4Sci Workshop at AAAI-24, 2024 <br>
+                <a href="https://arxiv.org/abs/2402.14474">Paper</a> &nbsp;&nbsp; <a href="https://github.com/interpretml/TalkToEBM">Code (TalkToEBM)
+                </a>
+              </li>
+            
+              <li><strong>Elephants Never Forget: Testing Language Models for Memorization of Tabular Data</strong><br>
+                Sebastian Bordt, Harsha Nori, Rich Caruana<br>
+                Table Representation Learning Workshop at NeurIPS, 2023 <br>
+                <a href="https://arxiv.org/abs/2403.06644">Paper</a>
+              </li>
+
+              <li><strong>Which Models have Perceptually-Aligned Gradients? An Explanation via Off-Manifold
+                  Robustness</strong><br>
+                Suraj Srinivas*, Sebastian Bordt*, Hima Lakkaraju<br>
+                NeurIPS, 2023 <br>
+                <strong><div style="color:red;">Spotlight</div></strong>
+                <a href="https://arxiv.org/abs/2305.19101">Paper</a> &nbsp;&nbsp; <a href="https://github.com/tml-tuebingen/pags">Code</a>
+              </li>
+
+              <li><strong>The Manifold Hypothesis for Gradient-Based
+                  Explanations</strong><br>
+                Sebastian Bordt, Uddeshya Upadhyay, Zeynep Akata, Ulrike von Luxburg<br>
+                Explainable AI for Computer Vision (XAI4CV) Workshop at CVPR 2023 <br>
+                <strong><div style="color:red;">Spotlight</div></strong>
+                <a href="https://arxiv.org/abs/2206.07387">Paper</a>
+              </li>
+
+              <li><strong>From Shapley Values to Generalized Additive
+                  Models and back
+                </strong>
+                <br>
+                Sebastian Bordt, Ulrike von Luxburg<br>
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2023<br>
+                <a href="https://proceedings.mlr.press/v206/bordt23a.html">Paper
+                </a> &nbsp;&nbsp; <a href="https://github.com/tml-tuebingen/nshap">Code
+                </a>
+              </li>
+
+              <li><strong>Post-hoc explanations fail to achieve
+                  their
+                  purpose in adversarial contexts
+                </strong>
+                <br>
+                Sebastian Bordt, Michèle Finck, Eric Raidl, Ulrike von Luxburg<br>
+                ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2022 <br>
+                <a href="https://dl.acm.org/doi/abs/10.1145/3531146.3533153">Paper
+                </a> &nbsp;&nbsp; <a href="https://github.com/tml-tuebingen/facct-post-hoc">Code
+                </a> &nbsp;&nbsp; <a
+                  href="https://www.machinelearningforscience.de/en/artificial-intelligence-ai-should-it-explain-itself/">Blog
+                  Post
+                </a> &nbsp;&nbsp; <a href="https://www.youtube.com/watch?v=bYtyz7tGNyQ">Video
+                </a>
+
+              </li>
+
+
+
+              <li><strong>A Bandit Model for Human-Machine Decision
+                  Making with Private Information and Opacity
+                </strong>
+                <br>
+                Sebastian Bordt, Ulrike von Luxburg<br>
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2022<br>
+                <a href="https://proceedings.mlr.press/v151/bordt22a.html">Paper
+                </a>
+              </li>
+
+              <li><strong>Recovery Guarantees for Kernel-based Clustering under Non-parametric Mixture
+                  Models</strong><br>
+                Leena C. Vankadara, Sebastian Bordt, Ulrike von Luxburg, Debarghya Ghoshdastidar<br>
+                International Conference on Artificial Intelligence and Statistics (AISTATS), 2021 <br>
+                <strong><div style="color:red;">Oral Presentation</div></strong>
+                <a href="https://proceedings.mlr.press/v130/vankadara21a.html">Paper
+                </a>
+              </li>
+
+
+            </ul>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    <a href="https://github.com/jonbarron/jonbarron_website">Website template</a>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </td>
+      </tr>
+  </table>
+</body>
+
+</html>
