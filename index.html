@@ -200,14 +200,14 @@
 .social-links {
   display: flex;
   flex-direction: row;
-  gap: 16px; /* half of 12px */
+  gap: 24px; /* increased spacing */
   align-items: center;
   justify-content: flex-start;
 }
 
 .social-link {
-  width: 76px;
-  height: 76px;
+  width: 60px;
+  height: 60px;
   background: transparent;
   overflow: hidden;
   display: flex;
@@ -216,8 +216,8 @@
 }
 
 .social-link img {
-  width: 76px;
-  height: 76px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   transition: opacity 0.3s ease;
 }
@@ -229,13 +229,13 @@
 /* Mobile Device Adjustment */
 @media (max-width: 768px) {
   .social-link {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
   }
 
   .social-link img {
-    width: 36px;
-    height: 36x;
+    width: 30px;
+    height: 30px;
   }
 }
         /* Section Styles */
@@ -331,6 +331,16 @@
       color: var(--text-primary);
       margin-bottom: 0.5rem;
       line-height: 1.5;
+    }
+
+    .publication-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .publication-title a:hover {
+      color: var(--primary-color);
     }
 
     .publication-authors {
@@ -632,19 +642,19 @@
       <div class="publications-grid">
 
         <div class="publication-item">
-          <h3 class="publication-title">On the Surprising Effectiveness of Large Learning Rates under Standard Width Scaling</h3>
+          <h3 class="publication-title"><a href="https://arxiv.org/abs/2505.22491">On the Surprising Effectiveness of Large Learning Rates under Standard Width Scaling</a></h3>
           <p class="publication-authors">Moritz Haas, Sebastian Bordt, Ulrike von Luxburg, Leena Chennuru Vankadara</p>
           <p class="publication-venue">NeurIPS 2025</p>
           <div class="publication-meta">
             <div class="publication-spotlight">Spotlight</div>
             <div class="publication-links">
-              <a href="https://arxiv.org/abs/2410.03249" class="publication-link">Paper</a>
+              <a href="https://arxiv.org/abs/2505.22491" class="publication-link">Paper</a>
             </div>
           </div>
         </div>
         
         <div class="publication-item">
-          <h3 class="publication-title">How Much Can We Forget about Data Contamination?</h3>
+          <h3 class="publication-title"><a href="https://arxiv.org/abs/2410.03249">How Much Can We Forget about Data Contamination?</a></h3>
           <p class="publication-authors">Sebastian Bordt, Suraj Srinivas, Valentyn Boreiko, Ulrike von Luxburg</p>
           <p class="publication-venue">ICML 2025</p>
           <div class="publication-links">
@@ -654,7 +664,7 @@
         </div>
 
         <div class="publication-item">
-          <h3 class="publication-title">Position: Rethinking Explainable Machine Learning as Applied Statistics</h3>
+          <h3 class="publication-title"><a href="https://arxiv.org/abs/2402.02870">Position: Rethinking Explainable Machine Learning as Applied Statistics</a></h3>
           <p class="publication-authors">Sebastian Bordt, Eric Raidl, Ulrike von Luxburg</p>
           <p class="publication-venue">ICML 2025</p>
           <div class="publication-links">
@@ -663,7 +673,7 @@
         </div>
 
         <div class="publication-item">
-          <h3 class="publication-title">Elephants Never Forget: Memorization and Learning of Tabular Data in Large Language Models</h3>
+          <h3 class="publication-title"><a href="https://arxiv.org/abs/2404.06209">Elephants Never Forget: Memorization and Learning of Tabular Data in Large Language Models</a></h3>
           <p class="publication-authors">Sebastian Bordt, Harsha Nori, Vanessa Rodrigues, Besmira Nushi, Rich Caruana</p>
           <p class="publication-venue">COLM 2024</p>
           <div class="publication-links">
@@ -673,7 +683,7 @@
         </div>
 
         <div class="publication-item">
-          <h3 class="publication-title">Which Models have Perceptually-Aligned Gradients? An Explanation via Off-Manifold Robustness</h3>
+          <h3 class="publication-title"><a href="https://arxiv.org/abs/2305.19101">Which Models have Perceptually-Aligned Gradients? An Explanation via Off-Manifold Robustness</a></h3>
           <p class="publication-authors">Suraj Srinivas*, Sebastian Bordt*, Hima Lakkaraju</p>
           <p class="publication-venue">NeurIPS 2023</p>
           <div class="publication-meta">
@@ -686,7 +696,7 @@
         </div>
 
         <div class="publication-item">
-          <h3 class="publication-title">From Shapley Values to Generalized Additive Models and back</h3>
+          <h3 class="publication-title"><a href="https://proceedings.mlr.press/v206/bordt23a.html">From Shapley Values to Generalized Additive Models and back</a></h3>
           <p class="publication-authors">Sebastian Bordt, Ulrike von Luxburg</p>
           <p class="publication-venue">AISTATS 2023</p>
           <div class="publication-links">
