@@ -228,14 +228,19 @@
 
 /* Mobile Device Adjustment */
 @media (max-width: 768px) {
+  .social-links {
+    flex-wrap: wrap;
+    max-width: 300px;
+  }
+
   .social-link {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
   }
 
   .social-link img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
   }
 }
         /* Section Styles */
@@ -449,12 +454,19 @@
       .hero-section {
         grid-template-columns: 1fr;
         gap: 2rem;
-        text-align: center;
+      }
+
+      .profile-image-container {
+        justify-content: flex-start;
       }
 
       .profile-image {
         width: 255px;
         height: 375px;
+      }
+
+      .hero-content {
+        text-align: left;
       }
 
       .hero-content h1 {
@@ -467,7 +479,7 @@
       }
 
       .social-links {
-        justify-content: center;
+        justify-content: flex-start;
       }
     }
 
